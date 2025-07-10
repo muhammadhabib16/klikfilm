@@ -112,6 +112,7 @@ function detailPopular(m, n, age) {
 }
 
 function showDetail(m, n, age) {
+  let ageRating = "";
   const director = m.crew.find((person) => person.job === "Director");
   const year = n.release_date ? n.release_date.substring(0, 4) : "N/A";
   const actors = m.cast
