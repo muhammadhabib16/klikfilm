@@ -3,7 +3,7 @@
   height: 75vh; /* Tinggi hero section, 70% dari tinggi viewport */
   min-height: 400px; /* Tinggi minimum untuk layar kecil */
 
-  background-image: url("/img/Banner web.png");
+  background-image: url("img/Banner Web.png");
   background-size: cover; /* Membuat gambar menutupi seluruh area */
   background-position: center; /* Memusatkan gambar */
 
