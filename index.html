@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Web</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-primary-subtle">
+    <!--NAVBAR-->
+    <nav class="navbar fixed-top navbar-expand-lg bg-primary-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">KlikFilm</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--link-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link active Home-click"
+              aria-current="page"
+              href="index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="movie.html">Tv Series</a>
+            <a class="nav-link" href="About.html">About </a>
+          </div>
+          <!--Awal Search-->
+          <form class="d-flex ms-auto" role="search">
+            <input
+              class="form-control me-2 input-keyword"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn btn-outline-light search-btn" type="button">
+              Search
+            </button>
+          </form>
+          <!--Akhir Search-->
+        </div>
+      </div>
+    </nav>
+    <!--Akhir NAVBAR-->
+
+    <!--MAIN WEB-->
+    <div class="hero-section text-white">
+      <div class="hero-overlay"></div>
+
+      <div class="container text-center position-relative">
+        <h1 class="display-4 fw-bold">Watch and Enjoying</h1>
+        <p class="lead">Discover a New Movie or Story Around The World</p>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <!--awal carousel-->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <!--button disini-->
+        </div>
+        <!--carousel inner-->
+        <div class="carousel-inner"></div>
+        <!--akhir carousel inner-->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <buttoncarousel-icon
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon carousel-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </buttoncarousel-icon>
+      </div>
+      <!--Akhir carousel-->
+    </div>
+    <!--Card session-->
+    <div class="container">
+      <h2 class="text-center my-5">TRENDING NOW</h2>
+      <div class="row card-session"></div>
+    </div>
+    <!--end card session-->
+
+    <!--modal session-->
+    <div class="modal fade" id="movieDetailModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detail Film</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-trailer"
+              id="modal-trailer-button"
+            >
+              See Trailer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end modal session-->
+
+    <!--footer-->
+    <footer class="container-fluid bg-body-tertiary text-center py-4 mt-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-lg-start mb-3 mb-lg-0">
+            <h5 class="fw-bold">TENTANG KLIKFILM</h5>
+            <p class="small text-body-secondary">
+              KlikFilm adalah proyek sederhana untuk mempelajari cara
+              menggunakan API dengan benar. Proyek ini bertujuan agar pengguna
+              dapat dengan mudah mencari dan mendapatkan informasi tentang film
+              atau serial TV yang mereka inginkan.
+            </p>
+          </div>
+
+          <div class="col-lg-6 text-lg-end">
+            <h5 class="fw-bold mb-3">IKUTI KAMI</h5>
+            <a
+              href="https://www.instagram.com/m_habib_08?igsh=MWR4N2F0NncwenIwdA=="
+              class="btn btn-outline-secondary fs-4 mx-2"
+              title="Instagram"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="btn btn-outline-secondary fs-4 mx-2"
+              title="WhatsApp"
+            >
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a
+              href="mailto:email@anda.com"
+              class="btn btn-outline-secondary fs-4 mx-2"
+              title="Email"
+            >
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <hr class="my-3" />
+        <p class="small text-body-secondary">
+          &copy; 2025 KlikFilm. Dibuat dengan Bootstrap & TMDB API.
+        </p>
+      </div>
+    </footer>
+    <!--Akhir Footer-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
